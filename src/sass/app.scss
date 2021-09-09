@@ -1,0 +1,9 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+// base
+@import './base/variables';
+@import './base/globals';
+@import './base/utils';
+
+// layout
+@import './layout/navbar';

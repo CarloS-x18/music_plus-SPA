@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+body {
+    background-color: $bg-dark;
+    min-height: 100vh;
+    font-family: $rubik;
+}
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    font-family: $poppis;
+}
+button {
+    background-color: transparent;
+    border-color: transparent;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
