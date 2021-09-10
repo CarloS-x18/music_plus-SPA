@@ -1,0 +1,118 @@
+.home {
+    width: 90%;
+    max-width: 120rem;
+    margin: 5rem auto;
+    display: grid;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    @media (min-width: 1225px) {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10rem;
+    }
+
+    .home-text {
+        text-align: center;
+
+        @media (min-width: 1325px) {
+            text-align: left;
+            margin-top: 5rem;
+        }
+
+        .home-text-title {
+            color: #fff;
+            font-size: 3.5rem;
+
+            @media (min-width: 650px) {
+                font-size: 6rem;
+            }
+        }
+
+        .home-text-paragraph {
+            color: #fff;
+            font-size: 1.4rem;
+            margin: 4rem auto;
+            max-width: 75rem;
+
+            .text-color {
+                color: $primary-dark;
+                font-weight: 500;
+            }
+
+            @media (min-width: 650px) {
+                font-size: 1.8rem;
+            }
+        }
+
+        .home-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+
+            @media (min-width: 1325px) {
+                justify-content: left;
+                gap: 3.5rem;
+            }
+        }
+
+        .home-btn-plans {
+            background-color: $navbar-dark;
+            color: $primary-dark;
+            font-family: $poppins;
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding: .5rem 3.2rem;
+            border-radius: 50px;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: .2s all linear;
+            }
+
+            @media (min-width: 990px) {
+                padding: 1rem 5.6rem;
+            }
+        }
+        .home-btn-download {
+            background-color: $primary-dark;
+            color: $navbar-dark;
+            font-family: $poppins;
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding: .5rem 3.2rem;
+            border-radius: 50px;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: .2s all linear;
+            }
+
+            @media (min-width: 990px) {
+                padding: 1rem 5.6rem;
+            }
+        }
+    }
+    .home-img {
+        background-color: #00000030;
+        display:inline-block;
+        padding: 3rem;
+        border-radius: 26px;
+        width: 70%;
+        max-width: 40rem;
+
+        img {
+            width: 100%;
+        }
+
+        @media (min-width: 990px) {
+            max-width: 50rem;
+        }
+    }
+}

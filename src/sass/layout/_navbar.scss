@@ -9,7 +9,7 @@
     
     .logo {
         color: $primary-dark;
-        font-family: $poppis;
+        font-family: $poppins;
         font-size: 3rem;
         font-weight: bold;
 
@@ -19,8 +19,6 @@
     }
 
     .btn-menu {
-        cursor: pointer;
-
         @media (min-width: 970px) {
             display: none;
         }
@@ -84,7 +82,6 @@
         position: absolute;
         top: 2rem;
         right: 2rem;
-        cursor: pointer;
     }
     
     .links-mobile {
