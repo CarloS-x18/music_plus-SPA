@@ -1,0 +1,137 @@
+.navbar {
+    height: 7.5rem;
+    padding: 0 2.5rem;
+    background-color: $navbar-dark;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .logo {
+        color: $primary-dark;
+        font-family: $poppis;
+        font-size: 3rem;
+        font-weight: bold;
+
+        @media (min-width: 970px) {
+            font-size: 3.5rem;
+        }
+    }
+
+    .btn-menu {
+        cursor: pointer;
+
+        @media (min-width: 970px) {
+            display: none;
+        }
+    }
+
+    .pages {
+        display: none;
+
+        .links {
+            display: flex;
+            gap: 5rem;
+        }
+        a {
+            color: $navbar-light;
+            font-size: 2rem;
+
+            &:hover {
+                color: $primary-dark;
+            }
+        }
+
+        @media (min-width: 970px) {
+            display: block;
+        }
+    }
+    
+    .btn-mode {
+        display: none;
+
+        @media (min-width: 970px) {
+            display: block;
+        }
+    }
+
+    @media (min-width: 970px) {
+        padding: 0 5%;
+    }
+}
+
+.bg-nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: $opacity-nav;
+    top: 0;
+    display: none;
+}
+
+.content-nav {
+    height: 100vh;
+    width: 100%;
+    max-width: 45rem;
+    background-color: $navbar-dark;
+    padding: 6rem 3rem;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: .25s all linear;
+
+    .close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+    
+    .links-mobile {
+        display: grid;
+        gap: 2rem;
+    
+        .link-page-mobile {
+            font-size: 3.5rem;
+            font-weight: 500;
+            color: $secondary;
+        }
+    
+        .link-page-mobile {
+            padding: 0 1rem;
+            &:hover {
+                color: $primary-dark;
+            }
+        }
+    }
+    
+    .btn-mode-mobile {
+        position: absolute;
+        bottom: 7rem;
+        right: 2rem;
+    }
+}
+
+
+// Button
+.btn-mode {
+    cursor: pointer;
+
+    .mode-content {
+        display: flex;
+        justify-content: start;
+        width: 9rem;
+        background-color: $secondary;
+        border-radius: 50px;
+        padding: .2rem;
+    
+        .mode-icon {
+            height: 4.5rem;
+            width: 4.5rem;
+            padding: .7rem;
+            background-color: $bg-dark;
+            border-radius: 100px;
+        }
+    }
+}
+

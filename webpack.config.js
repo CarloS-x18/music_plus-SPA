@@ -30,5 +30,10 @@ module.exports = {
             template: './src/index.html',
             inject: 'body'
         })
-    ]
+    ],
+    devServer: {
+        static: {
+          directory: path.join(__dirname, 'build'),
+        }
+    }
 }

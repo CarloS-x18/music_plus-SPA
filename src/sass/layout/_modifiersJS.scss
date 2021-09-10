@@ -1,0 +1,14 @@
+.show-nav {
+    right: 0;
+
+    @media (min-width: 970px) {
+        right: -100%;
+    }
+}
+.show-bg-nav {
+    display: block;
+
+    @media (min-width: 970px) {
+        display: none;
+    }
+}

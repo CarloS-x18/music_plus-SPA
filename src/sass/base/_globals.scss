@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     font-family: $rubik;
 }
-h1, h2, h3, p {
+h1, h2, h3, p, ul, button {
     margin: 0;
     padding: 0;
 }
@@ -21,7 +21,7 @@ button {
     background-color: transparent;
     border-color: transparent;
 }
-ul {
+li {
     list-style: none;
 }
 a {
