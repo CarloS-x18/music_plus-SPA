@@ -1,0 +1,124 @@
+.contact { 
+    min-height: calc(100vh - 7.5rem);
+    display: grid;
+    place-items: center;
+
+    .container {
+        height: 90%;
+        width: 85%;
+        padding: 8rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 1.8rem;
+        background-color: $navbar-dark;
+
+        @media (min-width: 1250px) {
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 0 10rem;
+        }
+
+        .image_contact {
+            width: 21rem;
+
+            @media (min-width: 600px) {
+                width: 29rem;
+            }
+
+            @media (min-width: 1250px) {
+                width: 38rem;
+            }
+        }
+
+        .form_contact {
+            width: 82%;
+
+            @media (min-width: 1250px) {
+                width: 50%;
+            }
+        }
+
+        .form_text {
+            text-align: center;
+            margin-bottom: 2rem;
+
+            h2 {
+                font-size:  2rem;
+                color: #fff;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-weight: bold;
+                font-size: 1.6rem;
+                color: $primary-dark;
+                line-height: 1.2;
+            }
+        
+            @media (min-width: 600px) {
+                h2 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 2rem;
+                }
+            }
+
+            @media(min-width: 1450px) {
+                h2 {
+                    font-size: 4.2rem;
+                    margin-bottom: 2rem;
+                }
+                p {
+                    font-size: 3rem;
+                } 
+            }
+
+            @media (min-width: 1250px) {
+                text-align: left;
+                margin-bottom: 12rem;
+            }
+        }
+
+        .form_input {
+            width: 100%;
+            max-width: 50rem;
+            height: 3rem;
+            margin: 0 auto;
+            display: flex;
+
+            @media (min-width: 1250px) {
+                max-width: none;
+                height: 4rem;
+                margin: 0;
+            }
+        }
+
+        input[type = text] {
+            width: 70%;
+            padding-left: 1.5rem;
+            border-radius: 2rem 0 0 2rem;
+            background-color: #fff;
+            outline: none;
+            font-size: 1.4rem;
+
+            &::placeholder {
+                color: #A5A5A5;
+                font-family: $rubik;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+
+        input[type = submit] {
+            width: 30%;
+            border-radius: 0 2rem 2rem 0;
+            background-color: $primary-dark;
+            font-family: $poppins;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+    }
+}

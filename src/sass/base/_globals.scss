@@ -19,7 +19,7 @@ h1, h2, h3 {
     line-height: 1.2;
 }
 p {
-    line-height: 1.5;
+    line-height: 1.5; 
 }
 button {
     background-color: transparent;
@@ -32,10 +32,7 @@ a {
     text-decoration: none;
     color: black;
 }
-.root {
-    @media (min-width: 990px) {
-        display: grid;
-        place-items: center;
-        min-height: calc(100vh - 75px);
-    }
+input {
+    background-color: transparent;
+    border-color: transparent;
 }

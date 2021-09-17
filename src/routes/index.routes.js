@@ -14,7 +14,7 @@ const router = (route) => {
         case '#/plans':
                 return console.log('Plans');
         case '#/contact':
-            return console.log('Contact');
+            return main.appendChild(pages.Contact());
         default:
             return console.log(404);
     }
