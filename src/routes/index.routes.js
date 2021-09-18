@@ -10,7 +10,7 @@ const router = (route) => {
         case '#/':
             return main.appendChild(pages.Home());
         case '#/download':
-            return console.log('Download')
+            return main.appendChild(pages.Download());
         case '#/plans':
                 return console.log('Plans');
         case '#/contact':
